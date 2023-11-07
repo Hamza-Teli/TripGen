@@ -15,7 +15,7 @@ import Register from "./register";
 
 async function checkPassword(username, password) {
   const response = await fetch(
-    "https://tripgen-4a876-default-rtdb.europe-west1.firebasedatabase.app/users.json"
+    "firebase db link"
   );
   const dataObj = await response.json();
   const userArray = Object.keys(dataObj).map((key) => ({
